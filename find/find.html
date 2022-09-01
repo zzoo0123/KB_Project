@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="find.css">
+    <script type="text/javascript" src = "find.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5d65c53d9228d2649542f2df99ec7bba"></script>
+    <title>Find</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbarLogo">
+                <h1><a href="#">BinBottle</a></h1>
+            </div>
+
+            <ul class="navbarMenu">
+                <li><a href="">수거함 찾기</a></li>
+                <li><a href="">Info</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">문의/FAQ</a></li>
+            </ul>
+
+            <ul class="navbarIcon">
+                <li><a href="">MyPage</a></li>
+                <li><input type="search" placeholder="Search"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="addressSearch">
+            <h2>Address</h2>
+            <input type="text" id="postcode" placeholder="우편번호">
+            <input type="button" onclick="execDaumPostcode()" value="주소 검색"><br>
+            <input type="text" id="address" placeholder="주소">
+        </article>
+    
+        <article class="kakaoMap">
+            <h2>KakaoMap</h2>
+            <div id="map"></div>
+            <script>
+                var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
+                var mapOption = {
+                    center: new kakao.maps.LatLng(37.56363, 127.01168), // 지도의 중심좌표
+                    level: 5, // 지도의 확대 레벨
+                    mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+                }; 
+    
+                //지도를 미리 생성
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+            </script>
+        </article>
+    </main>
+    
+    <footer>
+        <h2>BinBottle</h2>
+        <p>Copyright ~</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita a culpa deserunt quam dolor, iusto tenetur nam placeat laborum quas eveniet soluta recusandae deleniti. Optio aliquam dolorum deleniti nulla. Numquam!</p>
+    </footer>
+</body>
+</html>
