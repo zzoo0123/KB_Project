@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+#container {
+    width: 1240;
+    zoom: 1;
+    position: relative;
+    margin: 0 auto;
+}
+
+#contents {
+    float: right;
+    width: 1240;
+}  
+
+div {
+    display: block;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+table {
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+

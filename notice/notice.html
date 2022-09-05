@@ -4,78 +4,295 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="notice.css">
+    <script src="notice.js"></script>
     <title>Notice</title>
 </head>
 <body>
     <header>
         <h1><a href="#BinBottle">BinBottle</a></h1>
-        <img class="logo">
-        <nav>
-            <ul class="navbarMenu">
-                <li><a href="">수거함 찾기</a></li>
-                <li><a href="">Info</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">문의/FAQ</a></li>
-            </ul>
-            <ul class="navbarIcon">
-                <li><a href="">MyPage</a></li>
-                <li><input type="search" placeholder="Search"></li>
-            </ul>
-        </nav>
+        <!--navibar-->
+        <div id="mheader" class="cboth">
+            <div class="header_sec02">
+                <div class="inner">
+                    <!-- 상단로고 -->
+                    <div class="top_logo">
+                        <a href="/">
+                            <img src="">
+                        </a>
+                    </div>
+                    <!-- 검색창 -->
+                    <div class="top_comm">
+                        <ul>
+                            <li>
+                                <a href="">LOGIN</a>
+                            </li>
+                            <li>
+                                <a href="">MYPAGE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="top_search quick search">
+                    <a href="#none">
+                        <img src="">
+                    </a>
+                </div>
+            </div>
+            <div class="header_sec03" id="comment_top">
+                <div class="inner">
+                    <!-- 상단 카테고리 -->
+                    <ul class="fleft top_cate">
+                        <div id="mcategory">
+                            <div id="slideCateList">
+                                <ul class="">
+                                    <li class="noChild">
+                                        <a href="">수거함찾기</a>
+                                    </li>
+                                    <li class="noChild">
+                                        <a href="">INFO</a>
+                                    </li>
+                                    <li class="noChild">
+                                        <a href="">COMMNUNITY</a>
+                                    </li>
+                                    <li class="noChild">
+                                        <a href="">문의/FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="layout">
     </header>
 
-    <section class="search">
-        <div>
-            <input type="search" placeholder="Search">
-            <img src="">
+    <div id="wrap">
+        <div id="container">
+            <div id="contents">
+                <div class="breadcrumb">
+                    <span>현재위치</span>
+                    <ol>
+                        <li>
+                            <a href="/">home</a>
+                        </li>
+                        <li title="현재위치">
+                            <strong>게시판 메인</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="title">
+                    <div class="txt_01">COMMUNITY</div>
+                    <div class="txt_02">게시판</div>
+                    ::after
+                </div>
+                <div class="boardMain">
+                    <div class="leftArea"></div>
+                    <div class="rightArea"></div>
+                </div>
+                <div class="boardMain">
+                    <div class="leftArea">
+                        <div class="area">
+                            <h3 class="area">NOTICE</h3>
+                            <div class="table">
+                                <table border="1" summary>
+                                    <caption>공지사항 목록</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:100%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="" class="btnLink">
+                                "더보기"
+                                ::after
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rightArea">
+                        <div class="area">
+                            <h3 class="area">FAQ</h3>
+                            <div class="table">
+                                <table border="1" summary>
+                                    <caption>FAQ 목록</caption>
+                                    <colgroup>
+                                        <col style="width:100%;">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leftArea">
+                        <div class="area">
+                            <h3 class="area">Q & A</h3>
+                            <div class="table">
+                                <table border="1" summary>
+                                    <caption>Q & A 목록</caption>
+                                    <colgroup>
+                                        <col style="width:auto">
+                                        <col style="width:100%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                        <tr class="record">
+                                            <td class="title">
+                                                <a href="">2022 추석 명절 수거 일정 안내</a>
+                                            </td>
+                                            <td class="right">2022-09-05</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="" class="btnLink">
+                                "더보기"
+                                ::after
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ::after
         </div>
-    </section>
+    </div>
 
-    <section>
-        <ul class="tabs">
-            <li class="tab-link current" data-tab="tab1">FAQ</li>
-            <li class="tab-link" data-tab="tab2">Q&A</li>
-            <li class="tab-link" data-tab="tab3">Notice</li>
-        </ul>
-        <div id="tab1" class="tab-content current">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt non ipsum, ducimus sed maiores repellat iste laudantium earum veniam magnam doloremque asperiores beatae nemo ex eaque culpa delectus. Alias.
-        </div>
-        <div id="tab2" class="tab-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt non ipsum, ducimus sed maiores repellat iste laudantium earum veniam magnam doloremque asperiores beatae nemo ex eaque culpa delectus. Alias.
-        </div>
-        <div id="tab3" class="tab-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur deserunt non ipsum, ducimus sed maiores repellat iste laudantium earum veniam magnam doloremque asperiores beatae nemo ex eaque culpa delectus. Alias.
-        </div> 
-    </section>
+    <hr class="layout">
     
-    <article class="faqTab">
-        <div id="faq" class="tabcontent">
-            <h3>FAQ</h3>
-            <p>write about FAQ</p>
-        </div>
-    </article>
-    <article class="qaTab">
-        <div id="qa" class="tabcontent">
-            <h3>Q&A</h3>
-            <p>write about Q&A</p>
-        </div>
-    </article>
-    <article class="noticeTab">
-        <div id="notice" class="tabcontent">
-            <h3>Notice</h3>
-            <p>write about Notice</p>
-        </div>
-    </article>
-
     <footer>
-        <h2>BinBottle</h2>
-        <div class="snsLink">
-            <img src="">
-        </div>
-        <div class="copyright">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea debitis ad optio quidem deleniti nulla incidunt enim nesciunt vitae fugiat itaque voluptate animi facilis, facere at quasi nisi ratione atque.</p>
+        <div id="mfooter" class="cboth">
+            <div class="lfooter">
+                <div class="ft_info01">
+                    <b>BinBottle</b>
+                    <br>
+                    " 서울특별시 00구 00동 "
+                    <span> | </span>
+                    " 사업자번호 : 000-00-00000 "
+                    <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
+                    <span> | </span>
+                    " 통신판매업신고 : 2022-서울00구-0000 "
+                    <br>
+                    " CEO: 000 "
+                    <span> | </span>
+                    " MAIL : binbottle.gmail.com "
+                    <br>
+                    " CALL CENTER : 02-0000-0000 "
+                    <span> | </span>
+                    " FAX : 02-0000-0000 "
+                </div>
+                <div class="ft_info02">
+                    © copyright
+                </div>
+            </div>
+            <div class="rfooter">
+
+            </div>
         </div>
     </footer>
 </body>
