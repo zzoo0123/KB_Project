@@ -28,9 +28,7 @@ h2, .h2, h1, .h1 {
   font-weight: 700;
   line-height: 1.2;
 }
-h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
+
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -66,7 +64,7 @@ button:focus:not(:focus-visible) {
   display: none;
 }
 /*화면 양옆 조정*/
-.container,.container-fluid,.container-lg{
+.container{
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -74,22 +72,11 @@ button:focus:not(:focus-visible) {
   margin-left: auto;
 }
 
-@media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
   }
 }
-@media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
-  }
-}
-
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -110,12 +97,6 @@ button:focus:not(:focus-visible) {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-@media (prefers-reduced-motion: reduce) {
-  .btn {
-    transition: none;
-  }
-}
-
 .btn-primary {
   color: black;
   background-color: #30a4ec;
@@ -138,21 +119,9 @@ button:focus:not(:focus-visible) {
   border-color:   #060e4a;
 }
 
-.fade {
-  transition: opacity 0.15s linear;
-}
-@media (prefers-reduced-motion: reduce) {
-  .fade {
-    transition: none;
-  }
-}
-.fade:not(.show) {
-  opacity: 0;
-}
 .collapse:not(.show) {
   display: none;
 }
-
 
 .nav {
   display: flex;
@@ -174,7 +143,7 @@ button:focus:not(:focus-visible) {
     transition: none;
   }
 }
-
+/*세부 정보들*/
 .nav-link.disabled {
   color: #6c757d;
   pointer-events: none;
@@ -310,22 +279,21 @@ button:focus:not(:focus-visible) {
 }
 .navbar-expand .navbar-nav {
   flex-direction: row;
+  position:absolute;
 }
-.navbar-expand .navbar-nav .dropdown-menu {
-  position: absolute;
-}
+
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
-.navbar-expand .navbar-nav-scroll {
+.navbar-expand{
   overflow: visible;
 }
 .navbar-expand .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
 }
-.navbar-expand .sub_menu {
+.navbar-expand{
   display: none;
 }
 .sub_menu {
@@ -424,22 +392,17 @@ header.binbottle_main {
   background-position: center center;
   background-size: cover;
 }
-header.binbottle_main .main_chart {
+header.binbottle_main .main_chart { /*수거되었어요~부분*/
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.binbottle_main .masthead-heading  {
+header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-#map {
-  width: 750px;
-  height: 350px;
 }

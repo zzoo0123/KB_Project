@@ -1,19 +1,100 @@
-
-html, body, div, dl, dt, dd, ul, ol, li, 
-h1, h2, h3, h4, h5, h6, 
-pre, code, form, fieldset, legend, input, textarea, p, blockquote,
-th, td, img {
-    margin: 0;
-    padding: 0;
+/*navbar*/
+.navbar {
+    display: flex; /*세로 -> 가로*/
+    justify-content: space-between; /*박스 사이 빈 공간*/
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
 }
-
-body, code {
-    color: #353535;
-    background: #fff;
+header {
+    margin: 0;
+    background-color: var(--background-color);
+    line-height: 1.6;
+    width: 1000px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none; /*파란글씨와 밑줄 제거*/
+    color: var(--text-color);
+}
+.navbarMenu {
+    list-style: none; /*\/구분점 제거*/
+    display: flex; 
+    margin: 0;
+    padding-left: 0;
+}
+.navbarMenu li {
+    padding: 8px 30px;
+}
+.navbarMenu li a {
+    color: #222;
+    text-decoration: none;
+    position: relative;
+}
+.navbarMenu li a:before {
+    content: '';
+    background-color: rgb(18, 176, 126);
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbarMenu li a:hover:before {
+    width: 100%;
+}
+.navbarIcon {
+    list-style: none;
+    display: flex;
+    color: var(--icon-color);
+    margin: 0;
+    padding-left: 0;
+}
+.navbarIcon li {
+    padding: 8px 12px;
+    margin: 0;
 }
 
 div {
-    display: block;
+    display:block;
+}
+
+.title {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.cboth {
+    clear: both;
+    zoom: 1;
+}
+
+.contents {
+    width: 1240;
+    margin: 0 auto;
+}
+
+.title .txt01 {
+    font-size: 26px;
+    color: #000;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.title .txt02 {
+    font-size: 14px;
+    color: #000;
+    line-height: 1;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.txt02 {
+    padding-bottom: 50px;
 }
 
 #wrap {
@@ -23,17 +104,48 @@ div {
     min-height: 550px;
 }
 
-#container {
-    width: 1240px;
-    zoom: 1;
-    position: relative;
-    margin: 0 auto;
+/* breadcrumb */
+.breadcrumb span {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    text-indent: 100%;
 }
 
-#container::after {
-    content: "";
-    display: block;
+.breadcrumb {
+    font-size: 12px;
     clear: both;
+    max-width: 20px auto;
+    width: 1240;
+}
+
+.breadcrumb ol {
+    float: right;
+}
+
+ol {
+    display: block;
+    list-style-type: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.breadcrumb li {
+    float: left;
+    padding: 0 0 0 12px;
+    margin: 0 0 0 8px;
+    color: #757575;
+}
+
+li {
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
 .boardMain .leftArea {
@@ -42,34 +154,8 @@ div {
 }
 
 .boardMain .rightArea {
-    float: right;
+    float: left;
     width: 50%;
-}
-
-footer {
-    width: 100%;
-    background: #f6f6f6;
-}
-
-b {
-    font-weight: bold;
-}
-
-a, a:hover {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-li {
-    text-align: -webkit-match-parent;
-}
-
-colgroup {
-    display: table-column-group;
 }
 
 table {
@@ -101,15 +187,30 @@ tbody {
     border-color: inherit;
 }
 
+.boardMain .btnLink {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+a.btnLink {
+    display: inline-block;
+    margin: -2px -2px 0 3px;
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #77797d;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+/* footer */
 #mfooter {
     margin: 60px auto 0px;
     width: 1280;
     text-align: left;
     background: #f6f6f6;
-}
-
-.cboth {
-    clear: both;
 }
 
 .cboth::after{
@@ -122,6 +223,7 @@ tbody {
     float: left;
     padding-top: 45px;
     padding-bottom: 45px;
+    padding-left: 5%;
 }
 
 #mfooter .ft_info01 {
@@ -135,7 +237,6 @@ tbody {
     padding: 0px 5px;
     font-weight: 300;
 }
-
 
 #mfooter .ft_info02 {
     font-size: 11px;

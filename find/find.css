@@ -57,6 +57,50 @@ a {
     margin: 0;
 }
 
+/* breadcrumb */
+.breadcrumb span {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    text-indent: 100%;
+}
+
+.breadcrumb {
+    font-size: 12px;
+    clear: both;
+    max-width: 20px auto;
+    width: 1240;
+}
+
+.breadcrumb ol {
+    float: right;
+}
+
+ol {
+    display: block;
+    list-style-type: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.breadcrumb li {
+    float: left;
+    padding: 0 0 0 12px;
+    margin: 0 0 0 8px;
+    color: #757575;
+}
+
+li {
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
 div {
     display:block;
 }
@@ -204,6 +248,7 @@ p {
     float: left;
     padding-top: 45px;
     padding-bottom: 45px;
+    padding-left: 5%;
 }
 
 #mfooter .ft_info01 {

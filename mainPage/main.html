@@ -1,93 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAIN</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="navbarLogo">
-                <a href="">
-                    <img src="assets/logo.jpg" style="width:70px">
-                </a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>BinBottle</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+            <!--제목 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="main.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!--navibar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!--네비로고-->
+                <a class="BB_logo" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <!--상단 우측 메뉴 버튼-->
+                <button class="sub_menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#main_find">수거함찾기</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#page-top">소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#main_event">콘텐츠</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#main_qa">문의/FAQ</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <ul class="navbarMenu">
-                <li><a href="">수거함 찾기</a></li>
-                <li><a href="">Info</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">문의/FAQ</a></li>
-            </ul>
-
-            <ul class="navbarIcon">
-                <li><a href="">MyPage</a></li>
-                <li><input type="search" placeholder="Search"></li>
-            </ul>
         </nav>
-    </header>
-    <hr class="layout">
-    <div id="wrap">
-        <div class="breadcrumb">
+        
+        <!-- Masthead-->
+        <header class="binbottle_main">
+            <div class="container">
+                <div class="main_chart">BinBottle</div>
+                <div class="masthead-heading text-uppercase">공병수거 관련</div>
+                <p>브랜드 소개 간략하고 임팩트있게 넣어놓기 </p>
+                <a class="btn btn-primary btn-xl text-uppercase" href="http://localhost:8080/info/info.html">더보기>></a>
+            </div>
+        </header>
+        <!-- 수거함 찾기-->
+        <section class="page-section" id="main_find">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">수거함찾기</h2>
+                </div>
+                    <div class="col-md-4">
+                        <p class="text-muted">/지도들어갈 자리/Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--브랜드소개-->
+       
+        <!--콘텐츠-->
+        <section class="page-section" id="main_event">
+            <div class="container">
+            <h1>컨텐츠넣는곳</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, veniam consectetur! Laboriosam, totam natus assumenda rem aliquam dolorem illum fugit?</p>
+            </div>
+        </section>
+        <!-- 문의-->
+        <section class="page-section bg-light" id="main_qa">
+            <div class="container">
+                <h1>문의사항 적는곳</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deleniti illum ex facilis fugiat voluptates similique alias fugit totam explicabo.</p>
+            </div>
+        </section>
+        <!-- Footer-->
 
-        </div>
-        <div class="cotents">
-            <div class="maintop">
-                <img src="assets/Rectangle.png" width="100%">
-            </div>
-            <br>
-            <br>
-            <div class="find">
-                <h2>수거함 위치 찾기</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, labore laborum reprehenderit veniam earum a ad quibusdam eveniet itaque quaerat, hic dolore molestiae qui, neque exercitationem iusto recusandae aspernatur enim?</p>
-            </div>
-            <br>
-            <div class="info">
-                <h2>INFO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum temporibus rem ex expedita soluta molestiae magnam delectus fugit veniam vitae ab error iste aut voluptates illum, necessitatibus, similique quisquam?</p>
-            </div>
-            <br>
-            <div class="community">
-                <h2>COMMUNITY</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus perspiciatis commodi dolores cumque consequatur maiores beatae facilis aliquam nemo atque deleniti mollitia eos quidem, dolorem iste. Itaque, temporibus soluta.</p>
-            </div>
-        </div>
-    </div>
-    <hr class="layout">
-    <footer>
-        <div id="mfooter" class="cboth">
-            <div class="lfooter">
-                <div class="ft_info01">
-                    <b>BinBottle</b>
-                    <br>
-                    " 서울특별시 00구 00동 "
-                    <span> | </span>
-                    " 사업자번호 : 000-00-00000 "
-                    <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
-                    <span> | </span>
-                    " 통신판매업신고 : 2022-서울00구-0000 "
-                    <br>
-                    " CEO: 000 "
-                    <span> | </span>
-                    " MAIL : binbottle.gmail.com "
-                    <br>
-                    " CALL CENTER : 02-0000-0000 "
-                    <span> | </span>
-                    " FAX : 02-0000-0000 "
+        <footer>
+            <div id="mfooter" class="cboth">
+                <div class="lfooter">
+                    <div class="ft_info01">
+                        <b>BinBottle</b>
+                        <br>
+                        " 서울특별시 00구 00동 "
+                        <span> | </span>
+                        " 사업자번호 : 000-00-00000 "
+                        <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
+                        <span> | </span>
+                        " 통신판매업신고 : 2022-서울00구-0000 "
+                        <br>
+                        " CEO: 000 "
+                        <span> | </span>
+                        " MAIL : binbottle.gmail.com "
+                        <br>
+                        " CALL CENTER : 02-0000-0000 "
+                        <span> | </span>
+                        " FAX : 02-0000-0000 "
+                    </div>
+                    <div class="ft_info02">
+                        © copyright
+                    </div>
                 </div>
-                <div class="ft_info02">
-                    © copyright
+                <div class="rfooter">
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="rfooter">
-                <img src="assets/logos/facebook.svg">
-                <img src="assets/logos/google.svg">
-                <img src="assets/logos/microsoft.svg">
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="main.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
