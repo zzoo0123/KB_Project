@@ -99,6 +99,12 @@ div {
         display: block;
         text-align: left;
     }
+
+    .map {
+        width: 100%;
+        display: block;
+        /* 좌우비율 */
+    }
 }
 
 .card {
