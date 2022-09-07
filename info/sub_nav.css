@@ -18,23 +18,21 @@ a {
     justify-content: space-between;
     align-items: center;
     padding:25px 10px;
-    position:fixed;
     z-index:1;
     width:100%;
     display: flex;
-   
 }
 
 .logo {
-  float: left;
+    float: left;
     font-size: 1.2em;
     color: var(--text-color);
 }
 
 .menu {
-  margin-right:550px;
-   list-style: none;
-  display:flex;
+    margin-right:550px;
+    list-style: none;
+    display:flex;
 
 }
 

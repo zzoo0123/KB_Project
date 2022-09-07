@@ -10,23 +10,21 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbarLogo">
-                <a href="http://localhost:1234/mainPage/main.html">
-                    <img src="assets/logo.jpg" style="width:70px">
-                </a>
-            </div>
-            <ul class="navbarMenu">
-                <li><a href="http://localhost:1234/find/find.html">수거함 찾기</a></li>
-                <li><a href="">Info</a></li>
-                <li><a href="http://localhost:1234/content/content.html">Community</a></li>
-                <li><a href="http://localhost:1234/notice/notice.html">문의/FAQ</a></li>
-            </ul>
-            <ul class="navbarIcon">
-                <li><a href="">MyPage</a></li>
-                <li><input type="search" placeholder="Search"></li>
-            </ul>
-        </nav>
+        <!--네비 첨가 -->
+        <div id="sub_nav"></div>
+        <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('sub_nav');
+        </script>
+        <script type="text/javascript" src="sub_nav.html"></script>
+    
+        <script src="sub_nav.js"></script>
+        <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
     </header>
     <hr class="layout">
     <div id="wrap">
