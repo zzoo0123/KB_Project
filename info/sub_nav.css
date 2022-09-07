@@ -1,8 +1,8 @@
 /*세부페이지*/
 :root {
-    --text-color: #f8f8ff;
-    --background-color: #e1862487;
-    --accent-color: #fff0f5;
+    --text-color: black;
+    --background-color:transparent;
+    --accent-color: black;
 }
   * {
     margin: 0;
@@ -57,7 +57,7 @@ a {
     display: none;
 }
 
-  @media screen and (max-width: 1170px) {
+  @media screen and (max-width: 1200px) {
     .nav {
       flex-direction: column;
       align-items: flex-start;
