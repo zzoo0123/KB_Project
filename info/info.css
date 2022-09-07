@@ -9,46 +9,12 @@
     padding: 0;
   }
   body{
- 
     background-color: #e3d2aa44;
-  
   }
+
   a {
     text-decoration: none;
     color: var(--text-color);
-  }
-  
-  .nav {
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:25px 10px;
-  }
-  
-  .logo {
-    font-size: 1.2em;
-    color: var(--text-color);
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .menu li {
-    padding: 0 15px;
-    font-size: 15PX;
-  }
-  
-  .icon {
-    font-size: 15PX;
-    color: var(--text-color);
-  }
-  
-  .fab {
-    padding: 0 5px;
   }
   
   .bars {
@@ -58,54 +24,6 @@
     font-size: 40px;
   } 
 
-  @media screen and (max-width: 960px) {
-    .nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .menu li {
-      padding: 20px 0;
-    }
-  
-    .icon {
-      display: none;
-      width: 100%;
-      justify-content: center;
-      padding: 10px 0;
-    }
-  .bars{
-      display: block;
-      font-size: 25px;
-      color: var(--text-color);
-      position: absolute;
-      right:30px;
-      top:20px;
-    }
-    
-
-  }
-  .user{
-    display: block;
-    font-size: 25px;
-    color: var(--text-color);
-    position: absolute;
-    right: 100px;
-    top: 20px;
-  }
-
-
-  .active {
-    display: flex;
-  }
 
   .forest{
     margin-right:500px;
@@ -124,15 +42,18 @@
     
   }
   .forest3{
-    background-color: rgba(143, 85, 34, 0.664);
+    background-color: rgba(133, 104, 32, 0.788);
     margin-top:880px;
     position:absolute;
     width:700px;
     height:400px;
     opacity: 20%;;
   }
+  .circle{
+    width: 100%;
+  }
   .circle1{
-    background-color: orange;
+    background-color:  #e1862487;
     width:300px;
     height: 300px;
     border-radius: 50%;
@@ -141,7 +62,7 @@
     margin-top:1400px;
   }
   .circle2{
-    background-color: orange;
+    background-color: #e1862487;
     width:300px;
     height: 300px;
     border-radius: 50%;
@@ -150,12 +71,12 @@
     margin-top:1400px;
   }
   .circle3{
-    background-color: orange;
+    background-color:  #e1862487;
     width:300px;
     height: 300px;
     border-radius: 50%;
     position:absolute;
-    margin-left: 800px;
+    margin-left: 850px;
     margin-top:1400px;
   }
 
@@ -166,18 +87,30 @@
   }
   .logo_story{
     text-decoration: underline;
+    padding-top:10px;
+    font-family: 'Nanum Myeongjo', serif;
   }
   .second_story{
     position:relative;
     margin-top:150px;
+    font-family: 'Nanum Myeongjo', serif;
   }
 .third_story{
   position: relative;
   margin-top: 80px;
   text-align: right;
+  font-family: 'Nanum Myeongjo', serif;
+
 }
 .forth_story{
   position:relative;
   margin-top:100px;
   text-align: left;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.first{
+  font-family: 'Nanum Myeongjo', serif;
+}
+.title{
+  font-family: 'Dancing Script', cursive;
 }

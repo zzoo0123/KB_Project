@@ -1,0 +1,112 @@
+/*세부페이지*/
+:root {
+    --text-color: #f8f8ff;
+    --background-color: #e1862487;
+    --accent-color: #fff0f5;
+}
+  * {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav {
+    background-color: var(--background-color);
+    justify-content: space-between;
+    align-items: center;
+    padding:25px 10px;
+    position:fixed;
+    z-index:1;
+    width:100%;
+    display: flex;
+   
+}
+
+.logo {
+  float: left;
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+.menu {
+  margin-right:550px;
+   list-style: none;
+  display:flex;
+
+}
+
+.menu li {
+    padding: 0px 15px;
+    font-size: 15PX;
+    margin:0px 20px;
+}
+
+.icon {
+    font-size: 15PX;
+    color: var(--text-color);
+}
+
+.fab {
+    padding: 0 5px;
+}
+
+.bars {
+    display: none;
+}
+
+  @media screen and (max-width: 1170px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .menu li {
+      padding: 20px 0;
+      position:fixed;
+    }
+  
+    .icon {
+      display: none;
+      width: 100%;
+      justify-content: center;
+      padding: 10px 0;
+
+    }
+  .bars{
+      display: block;
+      font-size: 25px;
+      color: var(--text-color);
+      position: absolute;
+      right:70px;
+      top:25px;
+    }
+}
+    
+.user{
+    display: block;
+    font-size: 25px;
+    color: var(--text-color);
+    position: absolute;
+    right: 100px;
+    top: 25px;
+}
+.find{
+    display: block;
+    font-size:25px;
+    color:var(--text-color);
+    position:absolute;
+    right: 250px;
+    top:25px;
+    
+}
