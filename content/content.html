@@ -1,0 +1,254 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+    <link type="text/css" rel="stylesheet" href="./content.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!--이벤트 슬라이더-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.helper.ie8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.helper.ie8.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <header>
+            <!--네비 첨가 -->
+            <div id="sub_nav"></div>
+            <script>
+            async function fetchHtmlAsText(url) {
+                return await (await fetch(url)).text();
+            }
+            async function importPage(target) {
+                document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+            }
+            importPage('sub_nav');
+            </script>
+            <script type="text/javascript" src="sub_nav.html"></script>
+        
+            <script src="sub_nav.js"></script>
+            <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
+        </header>
+    </header>
+
+    <!-- Slideshow container -->
+    <hr class="layout">
+    <div class="slideshow-container main">
+    
+        <div class="breadcrumb">
+            <span>현재위치</span>
+            <ol>
+                <li>
+                    <a href="http://localhost:1234/mainPage/main.html">home</a>
+                </li>
+                <li>
+                    <strong> > </strong>
+                </li>
+                <li title="현재위치">
+                    <strong>content</strong>
+                </li>
+            </ol>
+        </div>
+        <br><br>
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../images/img1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/img2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../images/img3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!--Event Slider-->
+    <section id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div class="controller">
+                        <div>
+                            <h1>Events</h1>
+                        </div>
+                        <div id="controls">
+                            <button class="previous"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="nexts"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="event-slider">
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-1"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Event1</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-2"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Event2</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-3"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Event3</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-4"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Event4</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-5"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Event5</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Content Slider-->
+    <section id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div class="controller">
+                        <div>
+                            <h1>Contents</h1>
+                        </div>
+                        <div id="controls">
+                            <button class="previous"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="nexts"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="content-slider">
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-11"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Content1</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-22"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Content2</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-33"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Content3</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-44"><a href="#">Learn More</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <h3>Content4</h3>
+                                    <p>event information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+
+        importPage('footer');
+    </script>
+
+    <script type="text/javascript" src="content.js"></script>
+</body>
+
+</html>
