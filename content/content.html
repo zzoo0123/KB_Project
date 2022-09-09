@@ -21,28 +21,25 @@
 
 <body>
     <header>
-        <header>
-            <!--네비 첨가 -->
-            <div id="sub_nav"></div>
-            <script>
-            async function fetchHtmlAsText(url) {
-                return await (await fetch(url)).text();
-            }
-            async function importPage(target) {
-                document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-            }
-            importPage('sub_nav');
-            </script>
-            <script type="text/javascript" src="sub_nav.html"></script>
-        
-            <script src="sub_nav.js"></script>
-            <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
-        </header>
+        <!--네비 첨가 -->
+        <div id="sub_nav"></div>
+        <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('sub_nav');
+        </script>
+        <script type="text/javascript" src="sub_nav.html"></script>
+        <script src="sub_nav.js"></script>
+        <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
+        <hr class="layout">
     </header>
 
     <!-- Slideshow container -->
     <div class="slideshow-container main">
-        <hr class="layout">
         <div class="breadcrumb">
             <span>현재위치</span>
             <ol>
@@ -234,7 +231,7 @@
         </div>
     </section>
 
-    <div id="footer"></div>
+    <div id="footer"><hr class="layout"></div>
     <script>
         async function fetchHtmlAsText(url) {
             return await (await fetch(url)).text();

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
     <link rel="stylesheet" href="notice.css">
-    <script src="notice.js"></script>
-    <title>Notice</title>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdns.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
@@ -27,8 +29,16 @@
         <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
     </header>
     <hr class="layout">
-    <div id="wrap">
-        <div class="breadcrumb">
+    <section class="notice">
+        <div class="page-title">
+            <div class="container">
+                <h3>공지사항</h3>
+            </div>
+        </div>
+        <!-- board seach area -->
+        <div id="board-search">
+            <div class="container">
+                <div class="breadcrumb">
                     <span>현재위치</span>
                     <ol>
                         <li>
@@ -41,239 +51,61 @@
                             <strong>notice</strong>
                         </li>
                     </ol>
+                </div>
+                <div class="search-window">
+                <form action="">
+                    <div class="search-wrap">
+                        <label for="search" class="blind">공지사항 내용 검색</label>
+                        <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
+                        <button type="submit" class="btn btn-dark">검색</button>
+                    </div>
+                </form>
+                </div>
+            </div>
         </div>
-        <div id="contents">
-            <div class="title contents cboth">
-                <div class="txt01">기타</div>
-                <div class="txt02">공지사항 및 우리동네 추가하기</div>
-                <div class="boardMain">
-                    <div class="leftArea"></div>
-                    <div class="rightArea"></div>
-                </div>
-                <div class="boardMain">
-                    <div class="leftArea">
-                        <div class="area">
-                            <h3 class="area">NOTICE</h3>
-                            <div class="table">
-                                <table border="1" summary>
-                                    <caption>공지사항 목록</caption>
-                                    <colgroup>
-                                        <col style="width:auto">
-                                        <col style="width:100%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">번호</th>
-                                            <th scope="col">제목</th>
-                                            <th scope="col">작성자</th>
-                                            <th scope="col">작성일</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rightArea">
-                        <div class="area">
-                            <h3 class="area">FAQ</h3>
-                            <div class="table">
-                                <table border="1" summary>
-                                    <caption>FAQ 목록</caption>
-                                    <colgroup>
-                                        <col style="width:auto;">
-                                        <col style="width:100%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">번호</th>
-                                            <th scope="col">제목</th>
-                                            <th scope="col">작성자</th>
-                                            <th scope="col">작성일</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="leftArea">
-                        <div class="area">
-                            <h3 class="area">Q & A</h3>
-                            <div class="table">
-                                <table border="1" summary>
-                                    <caption>Q & A 목록</caption>
-                                    <colgroup>
-                                        <col style="width:auto">
-                                        <col style="width:100%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">번호</th>
-                                            <th scope="col">제목</th>
-                                            <th scope="col">작성자</th>
-                                            <th scope="col">작성일</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="record">
-                                            <td>1</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>2</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>3</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>4</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="record">
-                                            <td>5</td>
-                                            <td class="subject">
-                                                <a href="">2022 추석 명절 수거 일정 안내</a>
-                                            </td>
-                                            <td>BinBottle</td>
-                                            <td>
-                                                <span class="txtNum">2022-00-00</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- board list area -->
+        <div id="board-list">
+            <div class="container">
+                <table class="board-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="th-num">번호</th>
+                            <th scope="col" class="th-title">제목</th>
+                            <th scope="col" class="th-date">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <th>
+                                <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
+                                <p>테스트</p>
+                            </th>
+                            <td>2017.07.13</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                            <td>2017.06.15</td>
+                        </tr>
+        
+                        <tr>
+                            <td>1</td>
+                            <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                            <td>2017.06.15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+            <div class="email">
+                <h2>EMAIL</h2>
+                <p>If you have any questions or areas you would like to add, please send us an email.</p>
+                <br>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
+                    &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
             </div>
         </div>
     </div>

@@ -11,12 +11,14 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-            <!--제목 폰트-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="main.css" rel="stylesheet" />
+        <!--제목 폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="main.css" rel="stylesheet" />
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5d65c53d9228d2649542f2df99ec7bba"></script>
     </head>
     <body id="page-top">
         <!--navibar-->
@@ -54,9 +56,75 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">수거함찾기</h2>
                 </div>
-                    <div class="col-md-4">
-                        <p class="text-muted">/지도들어갈 자리/Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+                    <article class="kakaoMap">
+                            <div id="map">
+                                <script>
+                                    var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
+                                    var mapOption = {
+                                        center: new kakao.maps.LatLng(37.542529591473404, 127.00745910045137), // 지도의 중심좌표
+                                        level: 8, // 지도의 확대 레벨
+                                        mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+                                    }; 
+                                    //지도를 미리 생성
+                                    var map = new kakao.maps.Map(mapContainer, mapOption);
+                                    
+                                    // 마커를 표시할 위치와 title 객체 배열입니다 
+                                    var positions = [
+                                        {
+                                            title: '삼청동점', 
+                                            latlng: new kakao.maps.LatLng(37.58205329131239, 126.98146919451167)
+                                        },
+                                        {
+                                            title: '성수점', 
+                                            latlng: new kakao.maps.LatLng(37.54325238256828, 127.03588368829855)
+                                        },
+                                        {
+                                            title: '강남점', 
+                                            latlng: new kakao.maps.LatLng(37.498078227741296, 127.0280002723799)
+                                        },
+                                        {
+                                            title: '가로수길', 
+                                            latlng: new kakao.maps.LatLng(37.52092160083764, 127.02287762941127)
+                                        },
+                                        {
+                                            title: '한남점', 
+                                            latlng: new kakao.maps.LatLng(37.536961636260685, 127.00157498418945)
+                                        },
+                                        {
+                                            title: '연남점', 
+                                            latlng: new kakao.maps.LatLng(37.56446678729628, 126.92200057939785)
+                                        }
+                                    ];
+                                    // 마커 이미지의 이미지 주소입니다
+                                    var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png"; 
+                                        
+                                    for (var i = 0; i < positions.length; i ++) {
+                                        
+                                        // 마커 이미지의 이미지 크기 입니다
+                                        var imageSize = new kakao.maps.Size(24, 35); 
+                                        
+                                        // 마커 이미지를 생성합니다    
+                                        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize); 
+                                        
+                                        // 마커를 생성합니다
+                                        var marker = new kakao.maps.Marker({
+                                            map: map, // 마커를 표시할 지도
+                                            position: positions[i].latlng, // 마커를 표시할 위치
+                                            title : positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+                                            image : markerImage // 마커 이미지 
+                                        });
+                                    }
+                                </script>
+                            </div>
+                    </article>
+                    <!-- <div class="email">
+                        <h2>EMAIL</h2>
+                        <p>If you have any questions or areas you would like to add, please send us an email.</p>
+                        <br>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
+                            &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
+                    </div> -->
                 </div>
             </div>
         </section>

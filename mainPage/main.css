@@ -410,7 +410,10 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+#map {
+  width: 750px;
+  height: 450px;
+}
 /* footer */
 #mfooter {
   margin: 60px auto 0px;
@@ -418,33 +421,27 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
   text-align: left;
   background: #f6f6f6;
 }
-
 .cboth::after{
   content: " ";
   display: block;
   clear: both;
 }
-
 #mfooter .lfooter {
   float: left;
   padding-top: 45px;
   padding-bottom: 45px;
   padding-left: 5%;
 }
-
 #mfooter .ft_info01 {
   font-size: 11px;
   color: #888;
   line-height: 21px;
   padding-top: 30px;
 }
-
 #mfooter .ft_info01 span {
   padding: 0px 5px;
   font-weight: 300;
 }
-
-
 #mfooter .ft_info02 {
   font-size: 11px;
   color: #888;
