@@ -24,22 +24,22 @@ a {
 }
 
 .logo {
-    float: left;
+    float:left;
     font-size: 1.2em;
     color: var(--text-color);
 }
 
 .menu {
-  margin-right:400px;
+    margin-right:150px;
     list-style: none;
     display:flex;
 
 }
 
 .menu li {
-    padding: 0px 60px;
+    padding: 0px 15px;
     font-size: 15PX;
-    margin:0px 20px;
+    margin-right:200px;
 }
 
 .icon {
@@ -70,7 +70,7 @@ a {
     }
   
     .menu li {
-      padding: 20px 0;
+      padding: 30px 0;
       position:fixed;
     }
   
@@ -92,19 +92,10 @@ a {
 }
     
 .user{
+    margin-left:1500px;
     display: block;
     font-size: 25px;
     color: var(--text-color);
     position: absolute;
-    right: 100px;
     top: 25px;
-}
-.find{
-    display: block;
-    font-size:25px;
-    color:var(--text-color);
-    position:absolute;
-    right: 250px;
-    top:25px;
-    
 }
