@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="notice.css">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="css.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdns.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,89 +28,104 @@
         <script src="sub_nav.js"></script>
         <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
     </header>
-    <hr class="layout">
-    <section class="notice">
-        <div class="page-title">
-            <div class="container">
-                <h3>공지사항</h3>
-            </div>
-        </div>
-        <!-- board seach area -->
-        <div id="board-search">
-            <div class="container">
-                <div class="breadcrumb">
-                    <span>현재위치</span>
-                    <ol>
-                        <li>
-                            <a href="http://localhost:1234/mainPage/main.html">home</a>
-                        </li>
-                        <li>
-                            <strong> > </strong>
-                        </li>
-                        <li title="현재위치">
-                            <strong>notice</strong>
-                        </li>
-                    </ol>
-                </div>
-                <div class="search-window">
-                <form action="">
-                    <div class="search-wrap">
-                        <label for="search" class="blind">공지사항 내용 검색</label>
-                        <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
-                        <button type="submit" class="btn btn-dark">검색</button>
-                    </div>
-                </form>
-                </div>
-            </div>
-        </div>
-        <!-- board list area -->
-        <div id="board-list">
-            <div class="container">
-                <table class="board-table">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="th-num">번호</th>
-                            <th scope="col" class="th-title">제목</th>
-                            <th scope="col" class="th-date">등록일</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>3</td>
-                            <th>
-                                <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
-                                <p>테스트</p>
-                            </th>
-                            <td>2017.07.13</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                            <td>2017.06.15</td>
-                        </tr>
-        
-                        <tr>
-                            <td>1</td>
-                            <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
-                            <td>2017.06.15</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-            <div class="email">
-                <h2>EMAIL</h2>
-                <p>If you have any questions or areas you would like to add, please send us an email.</p>
-                <br>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
-                    &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
-            </div>
+    <div class="container">
+        <div class="breadcrumb">
+            <span>현재위치</span>
+            <ol>
+                <li>
+                    <a href="http://localhost:1234/mainPage/main.html">home</a>
+                </li>
+                <li>
+                    <strong> > </strong>
+                </li>
+                <li title="현재위치">
+                    <strong>notice</strong>
+                </li>
+            </ol>
         </div>
     </div>
-    <hr class="layout">
-    
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>공지사항</strong>
+            <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호 조회</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">BinBottle 공식 홈페이지 점검으로 인한 서비스 일시 중단 안내</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">추석 연휴 관련 안내</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="email">
+            <strong>EMAIL</strong>
+            <p>If you have any questions or areas you would like to add, please send us an email.</p>
+            <br>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
+                &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
+        </div>
+    </div>
     <footer>
         <div id="mfooter" class="cboth">
             <div class="lfooter">
