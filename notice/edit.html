@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdns.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <!--네비 첨가 -->
+        <div id="sub_nav"></div>
+        <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('sub_nav');
+        </script>
+        <script type="text/javascript" src="sub_nav.html"></script>
+    
+        <script src="sub_nav.js"></script>
+        <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <span>현재위치</span>
+            <ol>
+                <li>
+                    <a href="http://localhost:1234/mainPage/main.html">home</a>
+                </li>
+                <li>
+                    <strong> > </strong>
+                </li>
+                <li title="현재위치">
+                    <strong>notice</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>공지사항</strong>
+            <p>공지사항을 빠르고 정확하게 안내드립니다.</p>
+        </div>
+        <div class="board_view_wrap">
+            <div class="board_write">
+                <div class="title"> 글 제목 </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd>
+                            <input type="text" placeholder="글쓴이 입력" value="BinBottle">
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd>
+                            <input type="password" placeholder="비밀번호 입력" value="1234">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea placeholder="내용 입력">
+                        글 내용을 작성해주세요
+                        글
+                        내
+                        용
+                        작
+                        성
+                        해
+                        주
+                        세
+                        요
+                    </textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="http://localhost:1234/notice/notice.html" class="on">목록</a>
+                <a href="#">수정</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="mfooter" class="cboth">
+            <div class="lfooter">
+                <div class="ft_info01">
+                    <b>BinBottle</b>
+                    <br>
+                    " 서울특별시 00구 00동 "
+                    <span> | </span>
+                    " 사업자번호 : 000-00-00000 "
+                    <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
+                    <span> | </span>
+                    " 통신판매업신고 : 2022-서울00구-0000 "
+                    <br>
+                    " CEO: 000 "
+                    <span> | </span>
+                    " MAIL : binbottle.gmail.com "
+                    <br>
+                    " CALL CENTER : 02-0000-0000 "
+                    <span> | </span>
+                    " FAX : 02-0000-0000 "
+                </div>
+                <div class="ft_info02">
+                    © copyright
+                </div>
+            </div>
+            <div class="rfooter">
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

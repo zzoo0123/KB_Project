@@ -7,18 +7,15 @@
 https://www.figma.com/file/Pg0SKjtYXSxwsuufG6nAq6/%EA%B8%B0%ED%9A%8D 
 
 ## MainPage
+### Navigation - y
+### Login - m
 
 ## Info
-
 ## Find
-### Map 
+### Map - j
 
-## Content
-### content
-### event
-
-## Notice
-
+## Event
+## Q&A
 
 ## 참고
 ### 네비게이션바

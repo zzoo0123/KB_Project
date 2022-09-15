@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="css.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdns.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <!--네비 첨가 -->
+        <div id="sub_nav"></div>
+        <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('sub_nav');
+        </script>
+        <script type="text/javascript" src="sub_nav.html"></script>
+    
+        <script src="sub_nav.js"></script>
+        <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <span>현재위치</span>
+            <ol>
+                <li>
+                    <a href="http://localhost:1234/mainPage/main.html">home</a>
+                </li>
+                <li>
+                    <strong> > </strong>
+                </li>
+                <li title="현재위치">
+                    <strong>notice</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>공지사항</strong>
+            <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호 조회</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">3</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">2</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+                <div>
+                    <div class="num">1</div>
+                    <div class="title">
+                        <a href="http://localhost:1234/notice/view.html">제목</a>
+                    </div>
+                    <div class="writer">BinBottle</div>
+                    <div class="date">2022.00.00</div>
+                    <div class="count">20</div>
+                </div>
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="email">
+            <strong>EMAIL</strong>
+            <p>If you have any questions or areas you would like to add, please send us an email.</p>
+            <br>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
+                &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
+        </div>
+    </div>
+    <footer>
+        <div id="mfooter" class="cboth">
+            <div class="lfooter">
+                <div class="ft_info01">
+                    <b>BinBottle</b>
+                    <br>
+                    " 서울특별시 00구 00동 "
+                    <span> | </span>
+                    " 사업자번호 : 000-00-00000 "
+                    <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
+                    <span> | </span>
+                    " 통신판매업신고 : 2022-서울00구-0000 "
+                    <br>
+                    " CEO: 000 "
+                    <span> | </span>
+                    " MAIL : binbottle.gmail.com "
+                    <br>
+                    " CALL CENTER : 02-0000-0000 "
+                    <span> | </span>
+                    " FAX : 02-0000-0000 "
+                </div>
+                <div class="ft_info02">
+                    © copyright
+                </div>
+            </div>
+            <div class="rfooter">
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

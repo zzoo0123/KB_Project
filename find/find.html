@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND</title>
+    <link rel="stylesheet" href="find.css">
+    <script type="text/javascript" src = "find.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--네비 첨가 -->
+        <div id="sub_nav"></div>
+        <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('sub_nav');
+        </script>
+        <script type="text/javascript" src="sub_nav.html"></script>
+    
+        <script src="sub_nav.js"></script>
+        <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
+    </header>
+    <hr class="layout">
+    <div id="wrap">
+        <div class="breadcrumb">
+            <span>현재위치</span>
+            <ol>
+                <li>
+                    <a href="http://localhost:1234/mainPage/main.html">home</a>
+                </li>
+                <li>
+                    <strong> > </strong>
+                </li>
+                <li title="현재위치">
+                    <strong>find</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="cotents">
+            <div class="title contents cboth">
+                <div class="txt01">수거함 찾기</div>
+                <div class="txt02">지역별 매장 안내</div>
+                <br>
+                <br>
+                <div class="column">
+                    <div class="card">
+                        <img src="../jimage/IMG_6811.JPG" alt="BinBottle삼청동점" style="width: 100%; height: 450px;">
+                        <div class="box">
+                            <h2>삼청동점</h2>
+                            <p class="boxTittle">서울특별시 종로구 팔판동 67-1</p>
+                            <p class="text01">
+                                전화번호: 02-0000-0000
+                            </p>
+                            <p class="bt01">
+                                <a href="http://kko.to/7DmE7rfQt">
+                                    <button class="button01">지도보기</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../jimage/IMG_6812.JPG" alt="BinBottle서울숲점" style="width: 100%; height: 450px;">
+                        <div class="box">
+                            <h2>서울숲점</h2>
+                            <p class="boxTittle">서울특별시 성동구 성수동1가 685-534</p>
+                            <p class="text01">
+                                전화번호: 02-0000-0000
+                            </p>
+                            <p class="bt01">
+                                <a href="http://kko.to/kiHH38z-k">
+                                    <button class="button01">지도보기</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../jimage/IMG_6794.JPG" alt="BinBottle강남점" style="width: 100%; height: 450px;">
+                            <h2>강남점</h2>
+                            <p class="boxTittle">서울특별시 강남구 강남대로 396</p>
+                            <p class="text01">
+                                전화번호: 02-0000-0000
+                            </p>
+                            <p class="bt01">
+                                <a href="http://kko.to/F_UNlgdV0">
+                                    <button class="button01">지도보기</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../jimage/IMG_6813.JPG" alt="BinBottle가로수길점" style="width: 100%; height: 450px;">
+                        <div class="box">
+                            <h2>가로수길점</h2>
+                            <p class="boxTittle">서울특별시 강남구 신사동 667-13</p>
+                            <p class="text01">
+                                전화번호: 02-0000-0000
+                            </p>
+                            <p class="bt01">
+                                <a href="http://kko.to/ZtGrCqKuW">
+                                    <button class="button01">지도보기</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../jimage/IMG_6814.JPG" alt="BinBottle한남점" style="width: 100%; height: 450px;">
+                        <div class="box">
+                            <h2>한남점</h2>
+                            <p class="boxTittle">서울특별시 용산구 한남동 683-20</p>
+                            <p class="text01">
+                                전화번호: 02-0000-0000
+                            </p>
+                            <p class="bt01">
+                                <a href="http://kko.to/x_eZx-RD3">
+                                    <button class="button01">지도보기</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../jimage/IMG_6815.JPG" alt="BinBottle연남점" style="width: 100%; height: 450px;">
+                        <div class="box">
+                            <h2>연남점</h2>
+                            <p class="boxTittle">서울특별시 마포구 연남동 250-9</p>
+                            <p class="text01">
+                                전화번호: 02-0000-0000
+                            </p>
+                            <p class="bt01">
+                                <a href="http://kko.to/CF-YfQzBt">
+                                    <button class="button01">지도보기</button>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="layout">
+    <footer>
+        <div id="mfooter" class="cboth">
+            <div class="lfooter">
+                <div class="ft_info01">
+                    <b>BinBottle</b>
+                    <br>
+                    " 서울특별시 00구 00동 "
+                    <span> | </span>
+                    " 사업자번호 : 000-00-00000 "
+                    <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
+                    <span> | </span>
+                    " 통신판매업신고 : 2022-서울00구-0000 "
+                    <br>
+                    " CEO: 000 "
+                    <span> | </span>
+                    " MAIL : binbottle.gmail.com "
+                    <br>
+                    " CALL CENTER : 02-0000-0000 "
+                    <span> | </span>
+                    " FAX : 02-0000-0000 "
+                </div>
+                <div class="ft_info02">
+                    © copyright
+                </div>
+            </div>
+            <div class="rfooter">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
