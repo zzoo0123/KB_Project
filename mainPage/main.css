@@ -135,7 +135,7 @@ button:focus:not(:focus-visible) {
 .nav-link {
 
   display: block;
- /* padding: 0.5rem 1rem;*/
+  /* padding: 0.5rem 1rem;*/
   margin-left:100px;
   color: black;
   text-decoration: none;
@@ -268,7 +268,6 @@ button:focus:not(:focus-visible) {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
-   
   .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
@@ -423,7 +422,7 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
 /* footer */
 #mfooter {
   margin: 60px auto 0px;
-  width: 1280;
+  width: 100%;
   text-align: left;
   background: #f6f6f6;
 }

@@ -1,9 +1,3 @@
-/* @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700"); */
-
-/* * {
-  box-sizing:border-box;
-  margin: 0;} */
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -43,7 +37,7 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #fff;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -88,28 +82,21 @@
   to {opacity: 1}
 }
 
-body{
-  color: white;
-  /* font-family: "Roboto", sans-serif; */
-}
-
 #slider{
   height: 500px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
 }
 
 .container{
-  width: 1600px;
-  margin:  auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .subcontainer{
   width: 85%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .controller{
@@ -124,14 +111,13 @@ body{
 .previous,.nexts{
   color:white;
   padding: 2px;
-  width: 22px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   border-radius: 50%;
-  outline: wheat;
   transition: 0.7s ease-in-out;
   border: 2px solid white;
   background-color: black;
-  box-shadow: 0 0 5px #bbb;
 }
 
 .previous:hover, .nexts:hover{
@@ -140,8 +126,7 @@ body{
 
 .slide-img{
   width: 100%;
-  height: 200px;
-  border: 1px solid wheat;
+  height: 300px;
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -206,7 +191,6 @@ body{
 #h1{
   padding: 2%;
   color: black;
-  /* font-family: "Roboto", sans-serif; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +224,7 @@ body{
 /* footer */
 #mfooter {
   margin: 60px auto 0px;
-  width: 1280;
+  width: 100%;
   text-align: left;
   background: #f6f6f6;
 }

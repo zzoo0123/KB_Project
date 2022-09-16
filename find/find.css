@@ -160,7 +160,7 @@ p {
 /* footer */
 #mfooter {
     margin: 60px auto 0px;
-    width: 1280;
+    width: 100%;
     text-align: left;
     background: #f6f6f6;
 }
