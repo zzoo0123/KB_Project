@@ -21,6 +21,8 @@
         <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5d65c53d9228d2649542f2df99ec7bba"></script>
         <link rel="stylesheet" href="media.css">
         <link rel="stylesheet" href="notice.css">
+        <link rel="stylesheet" href="content.css">
+        <script type="text/javascript" src = "content.js"></script>
     </head>
     <body id="page-top">
         <!--navibar-->
@@ -65,7 +67,9 @@
         <section class="page-section" id="main_find">
             <div class="container">
                 <div class="text-center">
-                    <h1 class="section-heading text-uppercase">수거함찾기</h1>
+                    <a href="http://localhost:1234/find/find.html">
+                        <h3 class="section-heading">수거함찾기</h3>
+                    </a>
                 </div>
                 <article class="kakaoMap">
                     <div id="map">
@@ -133,23 +137,62 @@
                 </section>
             </div>
         </section>
-        <!--브랜드소개-->
         <!--콘텐츠-->
         <section class="page-section" id="main_event">
             <div class="container">
-                <h1>컨텐츠넣는곳</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, veniam consectetur! Laboriosam, totam natus assumenda rem aliquam dolorem illum fugit?</p>
+                <a href="http://localhost:1234/content/content.html">
+                    <h3 class="section-heading">콘텐츠</h3>
+                </a>
+                <!--Content Slider-->
+                <section id="slider">
+                    <div class="Scontainer">
+                        <div class="subcontainer">
+                            <div class="slider-wrapper">
+                                <br>
+                                <div class="content-slider">
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-11"><a href="#">Learn More</a>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-22"><a href="#">Learn More</a>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-33"><a href="#">Learn More</a>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-44"><a href="#">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
         <!-- 문의-->
         <section class="page-section bg-light" id="main_qa">
             <div class="container">
-                <h1>문의</h1>
+                <a href="http://localhost:1234/notice/notice.html">
+                    <h3 class="section-heading">문의</h3>
+                </a>
                 <div class="board_wrap">
                     <div class="board_title">
-                        <a href="http://localhost:1234/notice/notice.html">
-                            <h2>공지사항</h2>
-                        </a>
+                        <h2>공지사항</h2>
                     </div>
                     <div class="board_list_wrap">
                         <div class="board_list">
@@ -172,7 +215,7 @@
                             <div>
                                 <div class="num">2</div>
                                 <div class="title">
-                                    <a href="http://localhost:1234/notice/view.html">제목</a>
+                                    <a href="http://localhost:1234/notice/view.html">BinBottle 공식 홈페이지 점검으로 인한 서비스 일시 중단 안내</a>
                                 </div>
                                 <div class="writer">BinBottle</div>
                                 <div class="date">2022.00.00</div>
@@ -181,7 +224,7 @@
                             <div>
                                 <div class="num">1</div>
                                 <div class="title">
-                                    <a href="http://localhost:1234/notice/view.html">제목</a>
+                                    <a href="http://localhost:1234/notice/view.html">BinBottle 공식 홈페이지 점검으로 인한 서비스 일시 중단 안내</a>
                                 </div>
                                 <div class="writer">BinBottle</div>
                                 <div class="date">2022.00.00</div>
@@ -196,7 +239,7 @@
                             <a href="#" class="bt next">></a>
                         </div>
                     </div>
-                    <br><br>
+                    <br><br><br><br>
                     <div class="email">
                         <h2>EMAIL</h2>
                         <p>If you have any questions or areas you would like to add, please send us an email.</p>

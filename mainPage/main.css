@@ -375,7 +375,7 @@ p {
     transition: height 0.3s ease-in-out;
   }
   /*네비바색깔*/
-#mainNav.navbar-shrink .BB_logo img {
+  #mainNav.navbar-shrink .BB_logo img {
     height: 1.5rem;
   }
   #mainNav .navbar-nav .nav-item {
@@ -416,7 +416,7 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
 }
 #map {
   width: 750px;
-  height: 450px;
+  height: 500px;
 }
 /* footer */
 #mfooter {
@@ -453,17 +453,11 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
   padding-top: 30px;
 }
 
-
-/*서브 내용 수정*/
-
-
 /*지도맵-수거함 찾기 부분*/
 .kakaoMap{
   display:flex;
   justify-content: center;
 }
-
-
 
 .email{
   font-size:large;
@@ -473,7 +467,7 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
 .search {
   padding-top:50px;
   padding-left:80px;
-  margin-left:610px;
+  margin-left: 500px;
   width: 400px;
   height: 100px;
 }
