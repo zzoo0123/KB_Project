@@ -1,7 +1,6 @@
 <html>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <!--네비 첨가 -->
@@ -35,9 +33,7 @@
         <script type="text/javascript" src="sub_nav.html"></script>
         <script src="sub_nav.js"></script>
         <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
-        <hr class="layout">
     </header>
-
     <!-- Slideshow container -->
     <div class="slideshow-container main">
         <div class="breadcrumb">
@@ -55,7 +51,6 @@
             </ol>
         </div>
         <br><br>
-
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
@@ -80,14 +75,12 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-
     <!-- The dots/circles -->
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-
     <!--Event Slider-->
     <section id="slider">
         <div class="container">
@@ -164,7 +157,6 @@
             </div>
         </div>
     </section>
-
     <!--Content Slider-->
     <section id="slider">
         <div class="container">
@@ -230,21 +222,35 @@
             </div>
         </div>
     </section>
-
-    <div id="footer"><hr class="layout"></div>
-    <script>
-        async function fetchHtmlAsText(url) {
-            return await (await fetch(url)).text();
-        }
-
-        async function importPage(target) {
-            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-        }
-
-        importPage('footer');
-    </script>
-
+    <footer>
+        <div id="mfooter" class="cboth">
+            <div class="lfooter">
+                <div class="ft_info01">
+                    <b>BinBottle</b>
+                    <br>
+                    " 서울특별시 00구 00동 "
+                    <span> | </span>
+                    " 사업자번호 : 000-00-00000 "
+                    <a href="#none" onclick="window.open"('https://')>[사업자정보확인]</a>
+                    <span> | </span>
+                    " 통신판매업신고 : 2022-서울00구-0000 "
+                    <br>
+                    " CEO: 000 "
+                    <span> | </span>
+                    " MAIL : binbottle.gmail.com "
+                    <br>
+                    " CALL CENTER : 02-0000-0000 "
+                    <span> | </span>
+                    " FAX : 02-0000-0000 "
+                </div>
+                <div class="ft_info02">
+                    © copyright
+                </div>
+            </div>
+            <div class="rfooter">
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="content.js"></script>
 </body>
-
 </html>
