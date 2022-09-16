@@ -1,5 +1,8 @@
 //content slider
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 let slider1 = tns({
   container : ".content-slider",
   "slideBy": 1,
@@ -28,7 +31,10 @@ let slider1 = tns({
 })
 
 //event slider
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 let slider2 = tns({
   container : ".event-slider",
   "slideBy": 1,
@@ -56,8 +62,11 @@ let slider2 = tns({
   }
 })
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> j
 //main slider
 let slideIndex = 1;
 showSlides(slideIndex);

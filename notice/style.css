@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 
 html {
@@ -11,6 +12,15 @@ ul, li {
     list-style: none;
 }
 
+=======
+} 
+html {
+    font-size: 10px;
+}
+ul, li {
+    list-style: none;
+}
+>>>>>>> j
 a {
     text-decoration: none;
     color: inherit;
@@ -20,6 +30,7 @@ a {
     width: 1000px;
     margin: 100px auto;
 }
+<<<<<<< HEAD
 
 .board_title {
     margin-bottom: 30px;
@@ -29,6 +40,14 @@ a {
     font-size: 3rem;
 }
 
+=======
+.board_title {
+    margin-bottom: 30px;
+}
+.board_title strong {
+    font-size: 3rem;
+}
+>>>>>>> j
 .board_title p {
     margin-top: 5px;
     font-size: 1.4rem;
@@ -39,7 +58,10 @@ a {
     text-align: center;
     font-size: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .bt_wrap a {
     display: inline-block;
     min-width: 80px;
@@ -49,11 +71,17 @@ a {
     border-radius: 2px;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 
 .bt_wrap a:first-child {
     margin-left: 0;
 }
 
+=======
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+>>>>>>> j
 .bt_wrap a.on {
     background: #000;
     color: #fff;
@@ -63,11 +91,15 @@ a {
     width: 100%;
     border-top: 2px solid #000;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_list > div {
     border-bottom: 1px solid #ddd;
     font-size: 0;
 }
+<<<<<<< HEAD
 
 .board_list > div.top {
     border-bottom: 1px solid #999;
@@ -77,12 +109,21 @@ a {
     border-bottom: 1px solid #000;
 }
 
+=======
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+.board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+>>>>>>> j
 .board_list > div > div {
     display: inline-block;
     padding: 15px 0;
     text-align: center;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 
 .board_list > div.top > div {
     font-weight: 600;
@@ -92,10 +133,19 @@ a {
     width: 10%;
 }
 
+=======
+.board_list > div.top > div {
+    font-weight: 600;
+}
+.board_list .num {
+    width: 10%;
+}
+>>>>>>> j
 .board_list .title {
     width: 60%;
     text-align: left;
 }
+<<<<<<< HEAD
 
 .board_list .top .title {
     text-align: center;
@@ -109,6 +159,17 @@ a {
     width: 10%;
 }
 
+=======
+.board_list .top .title {
+    text-align: center;
+}
+.board_list .writer {
+    width: 10%;
+}
+.board_list .date {
+    width: 10%;
+}
+>>>>>>> j
 .board_list .count {
     width: 10%;
 }
@@ -118,7 +179,10 @@ a {
     text-align: center;
     font-size: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_page a {
     display: inline-block;
     width: 32px;
@@ -135,18 +199,27 @@ a {
     font-size: 1.2rem;
     letter-spacing: -1px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_page a.num {
     padding-top: 9px;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_page a.num.on {
     border-color: #000;
     background: #000;
     color: #fff;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_page a:first-child {
     border-left: 1px solid #ddd;
 }
@@ -155,29 +228,44 @@ a {
     width: 100%;
     border-top: 2px solid #000;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_view .title {
     padding: 20px 15px;
     border-bottom: 1px dashed #ddd;
     font-size: 2rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_view .info {
     padding: 15px;
     border-bottom: 1px solid #999;
     font-size: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_view .info dl {
     position: relative;
     display: inline-block;
     padding: 0 20px;
 }
+<<<<<<< HEAD
 
 .board_view .info dl:first-child {
     padding-left: 0;
 }
 
+=======
+.board_view .info dl:first-child {
+    padding-left: 0;
+}
+>>>>>>> j
 .board_view .info dl::before {
     content: "";
     position: absolute;
@@ -188,26 +276,38 @@ a {
     height: 13px;
     background: #ddd;
 }
+<<<<<<< HEAD
 
 .board_view .info dl:first-child::before {
     display: none;
 }
 
+=======
+.board_view .info dl:first-child::before {
+    display: none;
+}
+>>>>>>> j
 .board_view .info dl dt,
 .board_view .info dl dd {
     display: inline-block;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 
 .board_view .info dl dt {
 
 }
 
+=======
+>>>>>>> j
 .board_view .info dl dd {
     margin-left: 10px;
     color: #777;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .board_view .cont {
     padding: 15px;
     border-bottom: 1px solid #000;
@@ -215,6 +315,7 @@ a {
     font-size: 1.4rem;
 }
 
+<<<<<<< HEAD
 .board_write {
     border-top: 2px solid #000;
 }
@@ -283,6 +384,8 @@ a {
     resize: vertical;
 }
 
+=======
+>>>>>>> j
 /* breadcrumb */
 .breadcrumb span {
     overflow: hidden;
@@ -301,7 +404,10 @@ a {
 .breadcrumb ol {
     float: right;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .breadcrumb li {
     float: left;
     padding: 0 0 0 12px;
@@ -309,15 +415,25 @@ a {
     color: #757575;
 }
 
+<<<<<<< HEAD
 .email strong {
     font-size: 3rem;
 }
 
+=======
+/* email */
+.email strong {
+    font-size: 3rem;
+}
+>>>>>>> j
 .email p {
     margin-top: 5px;
     font-size: 1.4rem;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .email a {
     font-size: 2rem;
 }
@@ -325,7 +441,11 @@ a {
 /* footer */
 #mfooter {
     margin: 60px auto 0px;
+<<<<<<< HEAD
     width: 1280;
+=======
+    width: 100%;
+>>>>>>> j
     text-align: left;
     background: #f6f6f6;
 }

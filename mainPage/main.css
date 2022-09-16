@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> j
 @charset "UTF-8";
 *,
 *::before,
@@ -11,7 +15,11 @@
 }
 body {
   margin: 0;
+<<<<<<< HEAD
   font-family: var(--bs-body-font-family);
+=======
+
+>>>>>>> j
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -134,7 +142,11 @@ button:focus:not(:focus-visible) {
 .nav-link {
 
   display: block;
+<<<<<<< HEAD
  /* padding: 0.5rem 1rem;*/
+=======
+  /* padding: 0.5rem 1rem;*/
+>>>>>>> j
   margin-left:100px;
   color: black;
   text-decoration: none;
@@ -183,7 +195,10 @@ button:focus:not(:focus-visible) {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+<<<<<<< HEAD
  
+=======
+>>>>>>> j
 }
 .navbar-nav {
   display: flex;
@@ -268,7 +283,10 @@ button:focus:not(:focus-visible) {
       padding-right: 0.5rem;
       padding-left: 0.5rem;
     }
+<<<<<<< HEAD
    
+=======
+>>>>>>> j
   .navbar-collapse {
       display: flex !important;
       flex-basis: auto;
@@ -338,12 +356,20 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
+<<<<<<< HEAD
   background-color: transparent;
+=======
+  background-color:white;
+>>>>>>> j
 }
 #mainNav .sub_menu {
   padding: 0.75rem;
   font-size: 0.75rem;
+<<<<<<< HEAD
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+=======
+  font-family: 'Nanum Myeongjo', serif;
+>>>>>>> j
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -353,8 +379,12 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 1rem;
   color: black;
+<<<<<<< HEAD
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 0.0625em;
+=======
+  font-family: 'Nanum Myeongjo', serif;
+>>>>>>> j
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color:#0d2541fb;
@@ -364,7 +394,11 @@ p {
     padding-top: 1.2rem;
     padding-bottom: 1.5rem;
     border: none;
+<<<<<<< HEAD
     background-color:transparent;
+=======
+    background-color:white;
+>>>>>>> j
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
     /*네비바사진*/
@@ -377,7 +411,11 @@ p {
     transition: height 0.3s ease-in-out;
   }
   /*네비바색깔*/
+<<<<<<< HEAD
 #mainNav.navbar-shrink .BB_logo img {
+=======
+  #mainNav.navbar-shrink .BB_logo img {
+>>>>>>> j
     height: 1.5rem;
   }
   #mainNav .navbar-nav .nav-item {
@@ -409,6 +447,10 @@ header.binbottle_main .main_chart { /*수거되었어요~부분*/
   font-family: 'Dancing Script', cursive;
 }
 header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
+<<<<<<< HEAD
+=======
+  padding-bottom:20px;
+>>>>>>> j
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -417,12 +459,20 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
 }
 #map {
   width: 750px;
+<<<<<<< HEAD
   height: 450px;
+=======
+  height: 500px;
+>>>>>>> j
 }
 /* footer */
 #mfooter {
   margin: 60px auto 0px;
+<<<<<<< HEAD
   width: 1280;
+=======
+  width: 100%;
+>>>>>>> j
   text-align: left;
   background: #f6f6f6;
 }
@@ -454,12 +504,53 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
   padding-top: 30px;
 }
 
+<<<<<<< HEAD
 
 /*서브 내용 수정*/
 
 
+=======
+>>>>>>> j
 /*지도맵-수거함 찾기 부분*/
 .kakaoMap{
   display:flex;
   justify-content: center;
 }
+<<<<<<< HEAD
+=======
+
+.email{
+  font-size:large;
+  text-align: center;
+}
+
+.search {
+  padding-top:50px;
+  padding-left:80px;
+  margin-left: 500px;
+  width: 400px;
+  height: 100px;
+}
+.search input {
+  width: 80%;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px black solid;
+}
+
+.search button {
+  font-size: 18px;
+  border: none;
+  background-color: rgba(11, 12, 11, 0.523);
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+img {
+  width: 100px;
+  margin-left:100px;
+}
+>>>>>>> j

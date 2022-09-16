@@ -7,6 +7,10 @@
 * {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+=======
+  font-family: 'Nanum Myeongjo', serif;
+>>>>>>> j
 }
 a {
   text-decoration: none;
@@ -23,12 +27,21 @@ a {
   display: flex;
 }
 
+<<<<<<< HEAD
 .logo {
   float:left;
   font-size: 1.2em;
   color: var(--text-color);
 }
 
+=======
+.logoImg{
+  width: 100px;
+  margin-left:50px;
+}
+
+
+>>>>>>> j
 .menu {
   margin-right:150px;
   list-style: none;
@@ -50,12 +63,79 @@ a {
 .fab {
   padding: 0 5px;
 }
+<<<<<<< HEAD
 
 .bars {
   display: none;
 }
 
 @media screen and (max-width: 1200px) {
+=======
+.dropdown-content,.dropdown{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+ 
+.dropdown {
+  /* 보더를 통해서 틀을 봐주는게 좋다 ! */
+  /* border: 1px solid #000; */
+  /* width: 200px; */
+  display: inline-block;
+}
+.dropdown-btn {
+  width: 150px;
+  /* 패딩으로 크기 늘려주기 */
+  padding : 10px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  color : black;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right:5px;
+  top:55px;
+}
+
+.dropdown-submenu{
+  /* border: 1px solid #000; */
+  height:100% ;
+  width:400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.304);
+  display: none;
+  font-size: 20px;
+  color: var(--text-color);
+  position: absolute;
+  right:3px;
+  top:70px;
+  z-index: 1;
+
+}
+
+.dropdown-submenu a {
+  background-color: white;
+  display: block;
+  padding-top:70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.dropdown-submenu a:hover{
+  background-color: rgba(255, 200, 138, 0.795);
+}
+/* hover 뒤에 다른 selector가 이어지면 앞이 명령의 대상, 뒤에가 style이 수행되고 적용되는 부분 */
+/* dropdown-btn 과 dropdown-sumbenu는 둘이 같은 계층이다 그래서 동작 안하는거임 (상하관계가 되어야 동작함)
+한칸을 띄운다 = 상하관계가 전제가 되어있다는거임 !!!!!*/
+.dropdown:hover .dropdown-submenu {
+  display: block;
+
+}
+
+
+
+>>>>>>> j
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -79,6 +159,7 @@ a {
     width: 100%;
     justify-content: center;
     padding: 10px 0;
+<<<<<<< HEAD
 
   }
 .bars{
@@ -88,15 +169,25 @@ a {
     position: absolute;
     right:70px;
     top:25px;
+=======
+>>>>>>> j
   }
 }
   
 .user{
+<<<<<<< HEAD
   margin-left:1500px;
+=======
+  right: 150px; 
+>>>>>>> j
   display: block;
   font-size: 25px;
   color: var(--text-color);
   position: absolute;
+<<<<<<< HEAD
   top: 25px;
+=======
+  top: 55px;
+>>>>>>> j
 }
 

@@ -54,31 +54,4 @@
     .board_view .info dl dd {
         font-size: 1.2rem;
     }
-<<<<<<< HEAD
-
-    .board_write .info dl {
-        width: 49%;
-    }
-
-    .board_write .info dl:first-child {
-        margin-right: 2%;
-    }
-
-    .board_write .title dt,
-    .board_write .info dt {
-        display: none;
-    }
-
-    .board_write .title dd,
-    .board_write .info dd {
-        width: 100%;
-    }
-
-    .board_write .title input[type="text"],
-    .board_write .info input[type="text"],
-    .board_write .info input[type="password"] {
-        width: 100%;
-    }
-=======
->>>>>>> j
 }

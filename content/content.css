@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
 
 /* * {box-sizing:border-box;
   margin: 0;} */
 
+=======
+>>>>>>> j
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -30,13 +33,19 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -44,7 +53,11 @@
 
 /* Caption text */
 .text {
+<<<<<<< HEAD
   color: #f2f2f2;
+=======
+  color: #fff;
+>>>>>>> j
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -89,6 +102,7 @@
   to {opacity: 1}
 }
 
+<<<<<<< HEAD
 body{
   color: white;
   font-family: "Roboto", sans-serif;
@@ -106,11 +120,27 @@ body{
 .container{
   width: 1600px;
   margin:  auto;
+=======
+#slider{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+>>>>>>> j
 }
 
 .subcontainer{
   width: 85%;
+<<<<<<< HEAD
   margin: auto;
+=======
+  margin: 0 auto;
+>>>>>>> j
 }
 
 .controller{
@@ -125,6 +155,7 @@ body{
 .previous,.nexts{
   color:white;
   padding: 2px;
+<<<<<<< HEAD
   width: 22px;
   cursor: pointer;
   border-radius: 50%;
@@ -133,6 +164,15 @@ body{
   border: 2px solid white;
   background-color: black;
   box-shadow: 0 0 5px #bbb;
+=======
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.7s ease-in-out;
+  border: 2px solid white;
+  background-color: black;
+>>>>>>> j
 }
 
 .previous:hover, .nexts:hover{
@@ -141,8 +181,12 @@ body{
 
 .slide-img{
   width: 100%;
+<<<<<<< HEAD
   height: 200px;
   border: 1px solid wheat;
+=======
+  height: 300px;
+>>>>>>> j
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -173,6 +217,7 @@ body{
 .img-1{
   background-image: url(../images/event1.jpg);
 }
+<<<<<<< HEAD
 
 .img-2{
   background-image: url(../images/event2.jpg);
@@ -202,6 +247,29 @@ body{
   background-image: url(../images/e3.jpg);
 }
 
+=======
+.img-2{
+  background-image: url(../images/event2.jpg);
+}
+.img-3{
+  background-image: url(../images/event3.jpg);
+}
+.img-4{
+  background-image: url(../images/event4.jpg);
+}
+.img-5{
+  background-image: url(../images/event5.jpg);
+}
+.img-11{
+  background-image: url(../images/e1.jpg);
+}
+.img-22{
+  background-image: url(../images/e2.jpg);
+}
+.img-33{
+  background-image: url(../images/e3.jpg);
+}
+>>>>>>> j
 .img-44{
   background-image: url(../images/e4.jpg);
 }
@@ -215,7 +283,10 @@ body{
 #h1{
   padding: 2%;
   color: black;
+<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
+=======
+>>>>>>> j
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,13 +301,17 @@ body{
   white-space: nowrap;
   text-indent: 100%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> j
 .breadcrumb {
   font-size: 12px;
   clear: both;
   max-width: 20px auto;
   width: 1240;
 }
+<<<<<<< HEAD
 
 .breadcrumb ol {
   float: right;
@@ -252,6 +327,11 @@ ol {
   padding-inline-start: 40px;
 }
 
+=======
+.breadcrumb ol {
+  float: right;
+}
+>>>>>>> j
 .breadcrumb li {
   float: left;
   padding: 0 0 0 12px;
@@ -259,8 +339,45 @@ ol {
   color: #757575;
 }
 
+<<<<<<< HEAD
 li {
   list-style: none;
   display: list-item;
   text-align: -webkit-match-parent;
 }
+=======
+/* footer */
+#mfooter {
+  margin: 60px auto 0px;
+  width: 100%;
+  text-align: left;
+  background: #f6f6f6;
+}
+.cboth::after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+#mfooter .lfooter {
+  float: left;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 5%;
+}
+#mfooter .ft_info01 {
+  font-size: 11px;
+  color: #888;
+  line-height: 21px;
+  padding-top: 30px;
+}
+#mfooter .ft_info01 span {
+  padding: 0px 5px;
+  font-weight: 300;
+}
+#mfooter .ft_info02 {
+  font-size: 11px;
+  color: #888;
+  line-height: 1px;
+  padding-top: 30px;
+}
+>>>>>>> j
