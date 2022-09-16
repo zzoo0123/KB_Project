@@ -15,23 +15,21 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-
-        <!--한글 폰트-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-        <!--css연결-->
+        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="main.css" rel="stylesheet" />
-        <link href="find_blank.css" rel="stylesheet">
         <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
         <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5d65c53d9228d2649542f2df99ec7bba"></script>
     </head>
     <body id="page-top">
-        <!--navibar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+         <!--navibar-->
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <!--네비로고-->
-                <a class="BB_logo" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <div class="logo">
+                    <a href="http://localhost:1234/mainPage/main.html"> 
+                      <img src="../jimage/logo.JPG">
+                    </a>
+                  </div>
                 <!--상단 우측 메뉴 버튼-->
                 <button class="sub_menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -50,20 +48,20 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="binbottle_main">
-            <div class="container">
-                <div class="main_chart">BinBottle</div>
-                <div class="masthead-heading text-uppercase">공병수거 관련</div>
-                <p>브랜드 소개 간략하고 임팩트있게 넣어놓기 </p>
-                <a class="btn btn-primary btn-xl text-uppercase" href="http://localhost:1234/info/info.html">더보기>></a>
-            </div>
-        </header>
+       <!-- Masthead-->
+       <header class="binbottle_main">
+        <div class="container">
+            <div class="main_chart">BinBottle</div>
+            <div class="masthead-heading text-uppercase">화장품 공병 수거</div>
+            <p>화장품 공병, 이제는 한 곳에서 간편하게 버리세요</p>
+            <a class="btn btn-primary btn-xl text-uppercase" href="http://localhost:1234/info/info.html">더보기>></a>
+        </div>
+    </header>
         <!-- 수거함 찾기-->
         <section class="page-section" id="main_find">
             <div class="container">
                 <div class="text-center">
-                    <h3 class="section-heading text-uppercase">동네 수거함 찾기</h3>
+                    <h2 class="section-heading text-uppercase">수거함찾기</h2>
                 </div>
                     <article class="kakaoMap">
                             <div id="map">
@@ -126,30 +124,23 @@
                                 </script>
                             </div>
                     </article>
-                    <section class="findblank">
-                        <form action="http://localhost:1234/find/find.html">
-                            <div class="search">
-                                <input type="text" name="query" value="" placeholder="찾으시는 지역을 입력해주세요">
-                                <button type="submit"><i class="fas fa-magnifying-glass"></i></button>
-                            </div>
-                        </form>
-                    </section>
-                <!--<div class="email">
-                        <h2>EMAIL</h2>
-                        <p>If you have any questions or areas you would like to add, please send us an email.</p>
-                        <br>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
-                            &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
-                    </div> -->
                 </div>
+                <section class="findblank">
+                    <form action="../find/find.html">
+                        <div class="search">
+                            <input type="text" name="query" value="" placeholder="찾으시는 지역을 입력해주세요">
+                            <button type="submit"><i class="fas fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </section>
+
             </div>
         </section>
-    
+        <!--브랜드소개-->
         <!--콘텐츠-->
         <section class="page-section" id="main_event">
             <div class="container">
-            <h3 class="section-heading text-uppercase">진행중인 이벤트</h3>
+            <h1>컨텐츠넣는곳</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, veniam consectetur! Laboriosam, totam natus assumenda rem aliquam dolorem illum fugit?</p>
             </div>
         </section>
@@ -157,7 +148,14 @@
         <section class="page-section bg-light" id="main_qa">
             <div class="container">
                 <h1>문의사항 적는곳</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo deleniti illum ex facilis fugiat voluptates similique alias fugit totam explicabo.</p>
+                <div class="email">
+                        <h2>EMAIL</h2>
+                        <p>If you have any questions or areas you would like to add, please send us an email.</p>
+                        <br>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:binbottle@gmil.com?Subject=우리동네에 추가해주세요
+                            &body=우리동네에 추가해주세요. %0D%0AEnter your name: %0D%0AEnter your email: %0D%0AIf you have any questions or areas you would like to add, please send us an email.">Contect us by Mail</a>
+                </div>
             </div>
         </section>
         <!-- Footer-->

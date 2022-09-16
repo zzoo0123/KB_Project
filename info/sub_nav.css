@@ -1,101 +1,151 @@
 /*세부페이지*/
 :root {
-    --text-color: black;
-    --background-color:transparent;
-    --accent-color: black;
+  --text-color: black;
+  --background-color:transparent;
+  --accent-color: black;
 }
-  * {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .nav {
-    background-color: var(--background-color);
-    justify-content: space-between;
-    align-items: center;
-    padding:25px 10px;
-    z-index:1;
-    width:100%;
-    display: flex;
+  background-color: var(--background-color);
+  justify-content: space-between;
+  align-items: center;
+  padding:25px 10px;
+  z-index:1;
+  width:100%;
+  display: flex;
 }
 
-.logo {
-    float:left;
-    font-size: 1.2em;
-    color: var(--text-color);
+img{
+  width: 100px;
+  margin-left:100px;
 }
+
 
 .menu {
-    margin-right:150px;
-    list-style: none;
-    display:flex;
+  margin-right:150px;
+  list-style: none;
+  display:flex;
 
 }
 
 .menu li {
-    padding: 0px 15px;
-    font-size: 15PX;
-    margin-right:200px;
+  padding: 0px 15px;
+  font-size: 15PX;
+  margin-right:200px;
 }
 
 .icon {
-    font-size: 15PX;
-    color: var(--text-color);
+  font-size: 15PX;
+  color: var(--text-color);
 }
 
 .fab {
-    padding: 0 5px;
+  padding: 0 5px;
+}
+.dropdown-content,.dropdown{
+  display: none;
 }
 
-.bars {
+
+
+@media screen and (max-width: 1200px) {
+ 
+.dropdown {
+  /* 보더를 통해서 틀을 봐주는게 좋다 ! */
+  /* border: 1px solid #000; */
+  /* width: 200px; */
+  display: inline-block;
+}
+.dropdown-btn {
+  width: 150px;
+  /* 패딩으로 크기 늘려주기 */
+  padding : 10px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0);
+  color : black;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right:5px;
+  top:55px;
+}
+
+.dropdown-submenu{
+  /* border: 1px solid #000; */
+  height:100% ;
+  width:400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.304);
+  display: none;
+  font-size: 20px;
+  color: var(--text-color);
+  position: absolute;
+  right:3px;
+  top:70px;
+  z-index: 1;
+
+}
+
+.dropdown-submenu a {
+  background-color: white;
+  display: block;
+  padding-top:70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.dropdown-submenu a:hover{
+  background-color: rgba(255, 200, 138, 0.795);
+}
+/* hover 뒤에 다른 selector가 이어지면 앞이 명령의 대상, 뒤에가 style이 수행되고 적용되는 부분 */
+/* dropdown-btn 과 dropdown-sumbenu는 둘이 같은 계층이다 그래서 동작 안하는거임 (상하관계가 되어야 동작함)
+한칸을 띄운다 = 상하관계가 전제가 되어있다는거임 !!!!!*/
+.dropdown:hover .dropdown-submenu {
+  display: block;
+
+}
+
+
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
     display: none;
-}
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-  @media screen and (max-width: 1200px) {
-    .nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .menu li {
-      padding: 30px 0;
-      position:fixed;
-    }
-  
-    .icon {
-      display: none;
-      width: 100%;
-      justify-content: center;
-      padding: 10px 0;
+  .menu li {
+    padding: 30px 0;
+    position:fixed;
+  }
 
-    }
-  .bars{
-      display: block;
-      font-size: 25px;
-      color: var(--text-color);
-      position: absolute;
-      right:70px;
-      top:25px;
-    }
+  .icon {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
 }
-    
+  
 .user{
-    margin-left:1500px;
-    display: block;
-    font-size: 25px;
-    color: var(--text-color);
-    position: absolute;
-    top: 25px;
+  right: 150px; 
+  display: block;
+  font-size: 25px;
+  color: var(--text-color);
+  position: absolute;
+  top: 55px;
 }
+

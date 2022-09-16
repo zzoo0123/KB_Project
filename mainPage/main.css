@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 *,
 *::before,
@@ -183,7 +184,6 @@ button:focus:not(:focus-visible) {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
- 
 }
 .navbar-nav {
   display: flex;
@@ -338,7 +338,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: transparent;
+  background-color:white;
 }
 #mainNav .sub_menu {
   padding: 0.75rem;
@@ -364,7 +364,7 @@ p {
     padding-top: 1.2rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color:transparent;
+    background-color:white;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
     /*네비바사진*/
@@ -409,6 +409,7 @@ header.binbottle_main .main_chart { /*수거되었어요~부분*/
   font-family: 'Dancing Script', cursive;
 }
 header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
+  padding-bottom:20px;
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -462,4 +463,41 @@ header.binbottle_main .masthead-heading  {/*공병수거 관련부분*/
 .kakaoMap{
   display:flex;
   justify-content: center;
+}
+
+
+
+.email{
+  font-size:large;
+  text-align: center;
+}
+
+.search {
+  padding-top:50px;
+  padding-left:20px;
+  margin-left:600px;
+  width: 350px;
+  height: 100px;
+}
+.search input {
+  width: 80%;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px black solid;
+}
+
+.search button {
+  font-size: 18px;
+  border: none;
+  background-color: rgba(11, 12, 11, 0.523);
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+img {
+  width: 100px;
+  margin-left:100px;
 }
