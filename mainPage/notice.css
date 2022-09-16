@@ -1,3 +1,4 @@
+
 ul, li {
     list-style: none;
 }
@@ -13,10 +14,9 @@ a {
 .board_title {
     margin-bottom: 30px;
 }
-
 .board_title p {
     margin-top: 5px;
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 
 .bt_wrap {
@@ -59,7 +59,7 @@ a {
     display: inline-block;
     padding: 15px 0;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 .board_list > div.top > div {
     font-weight: 600;
@@ -101,7 +101,7 @@ a {
 }
 .board_page a.bt {
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 15px;
     letter-spacing: -1px;
 }
 .board_page a.num {
@@ -145,8 +145,8 @@ a {
 /* email */
 .email p {
     margin-top: 5px;
-    font-size: 1.4rem;
+    font-size: 20px;
 }
 .email a {
-    font-size: 2rem;
+    font-size: 20px;
 }
