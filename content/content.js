@@ -1,5 +1,4 @@
 //content slider
-
 let slider1 = tns({
   container : ".content-slider",
   "slideBy": 1,
@@ -28,7 +27,6 @@ let slider1 = tns({
 })
 
 //event slider
-
 let slider2 = tns({
   container : ".event-slider",
   "slideBy": 1,
@@ -55,8 +53,6 @@ let slider2 = tns({
     }
   }
 })
-
-
 
 //main slider
 let slideIndex = 1;

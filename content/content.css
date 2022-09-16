@@ -31,13 +31,11 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -174,35 +172,27 @@ body{
 .img-1{
   background-image: url(../images/event1.jpg);
 }
-
 .img-2{
   background-image: url(../images/event2.jpg);
 }
-
 .img-3{
   background-image: url(../images/event3.jpg);
 }
-
 .img-4{
   background-image: url(../images/event4.jpg);
 }
-
 .img-5{
   background-image: url(../images/event5.jpg);
 }
-
 .img-11{
   background-image: url(../images/e1.jpg);
 }
-
 .img-22{
   background-image: url(../images/e2.jpg);
 }
-
 .img-33{
   background-image: url(../images/e3.jpg);
 }
-
 .img-44{
   background-image: url(../images/e4.jpg);
 }
@@ -240,25 +230,11 @@ body{
 .breadcrumb ol {
   float: right;
 }
-ol {
-  display: block;
-  list-style-type: 1em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
 .breadcrumb li {
   float: left;
   padding: 0 0 0 12px;
   margin: 0 0 0 8px;
   color: #757575;
-}
-li {
-  list-style: none;
-  display: list-item;
-  text-align: -webkit-match-parent;
 }
 
 /* footer */

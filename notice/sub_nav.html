@@ -4,11 +4,11 @@
 </head>
 <body>
   <section class="nav">
-      <div class="logo">
-        <a href="http://localhost:1234/mainPage/main.html"> 
-          <img src="../jimage/logo.JPG">
-        </a>
-      </div>
+    <div id="logo">
+      <a href="http://localhost:1234/mainPage/main.html"> 
+        <img src="../jimage/logo.JPG">
+      </a>
+    </div>
       <ul class="menu">
         <li><a href="http://localhost:1234/info/info.html">소개</a></li>
         <li><a href="http://localhost:1234/find/find.html">수거함찾기</a></li>
@@ -18,12 +18,17 @@
         <li class="user">
           <a href="http://localhost:1234/login/login.html"><i class="fas fa-user"></i></a>
         </li>
-      <div class="bars">
-        <a href="#">
-          <i class="fas fa-bars"></i>
-        </a>
-      </div>
   </section>
-  <script src="sub_nav.js"></script>
-  <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
+  <div class="dropdown">
+    <button class="dropdown-btn">   
+      <i class="fas fa-bars"></i></button>
+    <div class="dropdown-submenu">
+        <a href="http://localhost:1234/info/info.html">소개</a>
+        <a href="http://localhost:1234/find/find.html">수거함찾기</a>
+        <a href="http://localhost:1234/content/content.html">콘텐츠</a>
+        <a href="http://localhost:1234/notice/notice.html">문의/FAQ</a>
+    </div>
+</div>
+    <script src="sub_nav.js"></script>
+    <script src="https://kit.fontawesome.com/6f636caabd.js" crossorigin="anonymous"></script>
 </body>
