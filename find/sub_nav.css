@@ -23,7 +23,7 @@ a {
   display: flex;
 }
 
-img{
+.logoImg{
   width: 100px;
   margin-left:50px;
 }

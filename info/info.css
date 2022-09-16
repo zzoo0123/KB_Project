@@ -3,22 +3,18 @@
   --background-color: #e1862487;
   --accent-color: #fff0f5;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 ul, li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: var(--text-color);
 
 }
-
 .title{
   font-size: 50px;
   font-family:'Dancing Script', cursive;
@@ -50,20 +46,19 @@ a {
   height:400px;
   opacity: 20%;;
 }
+
 /*내용 위치*/
 .story{
   padding:50px 70px;
   text-align:left;
   position:relative;
 }
-
 .logo_story{
   text-decoration: underline;
   padding-top:10px;
   font-family: 'Nanum Myeongjo', serif;
   font-size:18px;
 }
-
 .second_story{
   position:relative;
   margin-top:150px;
@@ -85,15 +80,10 @@ font-size:18px;
   font-family: 'Nanum Myeongjo', serif;
   font-size:18px;
 }
-
 .first{
   font-family: 'Nanum Myeongjo', serif;
   font-size:18px;
 }
-
-
-
-
 
 /* breadcrumb */
 .breadcrumb span {
@@ -114,7 +104,6 @@ font-size:18px;
 .breadcrumb ol {
   float: right;
 }
-
 .breadcrumb li {
   float: left;
   padding: 0 0 0 12px;
