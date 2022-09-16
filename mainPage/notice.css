@@ -13,12 +13,10 @@ a {
 .board_title {
     margin-bottom: 30px;
 }
-.board_title strong {
-    /* font-size: 3rem; */
-}
+
 .board_title p {
     margin-top: 5px;
-    /* font-size: 1.4rem; */
+    font-size: 1.4rem;
 }
 
 .bt_wrap {
@@ -119,7 +117,6 @@ a {
     border-left: 1px solid #ddd;
 }
 
-
 /* breadcrumb */
 .breadcrumb span {
     overflow: hidden;
@@ -146,13 +143,10 @@ a {
 }
 
 /* email */
-.email strong {
-    /* font-size: 3rem; */
-}
 .email p {
     margin-top: 5px;
-    /* font-size: 1.4rem; */
+    font-size: 1.4rem;
 }
 .email a {
-    /* font-size: 2rem; */
+    font-size: 2rem;
 }
