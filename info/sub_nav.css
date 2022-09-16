@@ -23,17 +23,15 @@ a {
   display: flex;
 }
 
-img{
+.logoImg {
   width: 100px;
-  margin-left:100px;
+  margin-left:50px;
 }
-
 
 .menu {
   margin-right:150px;
   list-style: none;
   display:flex;
-
 }
 
 .menu li {
@@ -54,10 +52,7 @@ img{
   display: none;
 }
 
-
-
 @media screen and (max-width: 1200px) {
- 
 .dropdown {
   /* 보더를 통해서 틀을 봐주는게 좋다 ! */
   /* border: 1px solid #000; */

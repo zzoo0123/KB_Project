@@ -1,5 +1,3 @@
-
-
 /* breadcrumb */
 .breadcrumb span {
     overflow: hidden;
@@ -9,18 +7,15 @@
     white-space: nowrap;
     text-indent: 100%;
 }
-
 .breadcrumb {
     font-size: 12px;
     clear: both;
     max-width: 20px auto;
     width: 1240;
 }
-
 .breadcrumb ol {
     float: right;
 }
-
 ol {
     display: block;
     list-style-type: 1em;
@@ -30,14 +25,12 @@ ol {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-
 .breadcrumb li {
     float: left;
     padding: 0 0 0 12px;
     margin: 0 0 0 8px;
     color: #757575;
 }
-
 li {
     list-style: none;
     display: list-item;
@@ -52,17 +45,14 @@ div {
     padding: 50px 0px;
     text-align: center;
 }
-
 .cboth {
     clear: both;
     zoom: 1;
 }
-
 .contents {
     width: 1240;
     margin: 0 auto;
 }
-
 
 .title .txt01 {
     font-size: 26px;
@@ -71,7 +61,6 @@ div {
     letter-spacing: 1px;
     font-weight: 700;
 }
-
 .title .txt02 {
     font-size: 14px;
     color: #000;
@@ -80,11 +69,9 @@ div {
     font-weight: 300;
     padding-top: 10px;
 }
-
 .txt02 {
     padding-bottom: 50px;
 }
-
 .column {
     float: left;
     width: 32%;
@@ -99,7 +86,6 @@ div {
         display: block;
         text-align: left;
     }
-
     .map {
         width: 100%;
         display: block;
@@ -110,17 +96,14 @@ div {
 .card {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
-
 .box {
     padding: 0 16px;
 }
-
 .box2::after {
     content: "";
     clear: both;
     display: table;
 }
-
 .boxTitle {
     color: grey;
 }
@@ -128,12 +111,10 @@ div {
 .bt01 {
     padding: 20px 0 20px 0;
 }
-
 .text01 {
     color: black;
     padding: 10px 0 10px 0;
 }
-
 .button01 {
     border: none;
     outline: 0;
@@ -145,16 +126,14 @@ div {
     cursor: pointer;
     width: 100%;
 }
-
 .button01:hover {
     background-color: #eaeaea;
 }
 
-img {
+.findImg {
     border: none;
     vertical-align: top;
 }
-
 h2 {
     display: block;
     font-size: 1.5em;
@@ -164,7 +143,6 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
 p {
     display: block;
     margin-block-start: 1em;
@@ -186,33 +164,27 @@ p {
     text-align: left;
     background: #f6f6f6;
 }
-
 .cboth::after{
     content: " ";
     display: block;
     clear: both;
 }
-
 #mfooter .lfooter {
     float: left;
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 5%;
 }
-
 #mfooter .ft_info01 {
     font-size: 11px;
     color: #888;
     line-height: 21px;
     padding-top: 30px;
 }
-
 #mfooter .ft_info01 span {
     padding: 0px 5px;
     font-weight: 300;
 }
-
-
 #mfooter .ft_info02 {
     font-size: 11px;
     color: #888;
